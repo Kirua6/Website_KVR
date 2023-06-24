@@ -139,9 +139,7 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`nom_utilisateur`, `mot_de_passe`, `id`) VALUES
-('Administrateur', '$2y$10$vVa88spMor6J5diNNu6TPORBT476kpNanX2raCC4vrV/3kDXC9v4y', 5),
-('Killian', '$2y$10$.q9fTiABWqIfKlwl888f.OjkPxEDrHVzftjmV7lz8yys2Q/BtUY2.', 44),
-('Neggaoui', '$2y$10$nf7e5n9LmJ6UUyb7zCHxnOZU9UrCziLY9EqLzfQ.gdzX9PlH2rmqG', 41);
+('Administrateur', '$2y$10$1pSUyQfuY3IrsN7tXglrZuyGiLqw9Cha7gzqsC19yWJxPqHIu2YSK', 5),
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
