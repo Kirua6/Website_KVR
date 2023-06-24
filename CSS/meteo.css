@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    height: 100vh; /* Définit la hauteur de l'élément sur 100% de la hauteur de la vue */
+    margin: 20px; /* Ajoute une marge de 20 pixels autour de l'élément */
+    font-family: Arial, sans-serif; /* Définit la police de caractères à utiliser */
+    background: url('nuage.jpg') no-repeat center center fixed; /* Définit l'image de fond et la position du centre */
+    -webkit-background-size: cover; /* Règle de dimensionnement de l'image de fond pour les navigateurs WebKit */
+    -moz-background-size: cover; /* Règle de dimensionnement de l'image de fond pour les navigateurs Firefox */
+    -o-background-size: cover; /* Règle de dimensionnement de l'image de fond pour les navigateurs Opera */
+    background-size: cover; /* Règle de dimensionnement de l'image de fond générique */
+}
+
+.weather-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se replier sur plusieurs lignes si nécessaire */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+}
+
+.weather-table {
+    display: inline-block; /* Définit l'élément comme un bloc avec un affichage en ligne */
+    width: 240px; /* Définit la largeur de l'élément */
+    height: 280px; /* Définit la hauteur de l'élément */
+    margin-right: 13px; /* Ajoute une marge de 13 pixels à droite de l'élément */
+    margin-bottom: 13px; /* Ajoute une marge de 13 pixels en bas de l'élément */
+    vertical-align: top; /* Aligne l'élément en haut */
+    border: 1px solid #B3CDE0; /* Définit une bordure de 1 pixel solide avec la couleur #B3CDE0 */
+    padding: 20px; /* Ajoute un espace intérieur de 20 pixels à l'élément */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ajoute une ombre à l'élément */
+    border-radius: 30px; /* Définit un rayon de bordure de 30 pixels pour créer des coins arrondis */
+    background-color: #B3CDE0; /* Définit la couleur de fond de l'élément */
+}
+
+.weather-table table {
+    border-collapse: collapse; /* Supprime l'espace entre les bordures des cellules du tableau */
+    width: 100%; /* Définit la largeur du tableau sur 100% */
+    height: 100%; /* Définit la hauteur du tableau sur 100% */
+    font-size: 18px; /* Définit la taille de police à 18 pixels */
+}
+
+.weather-table table, .weather-table table th, .weather-table table td {
+    border: 1px solid #B3CDE0; /* Définit une bordure de 1 pixel solide avec la couleur #B3CDE0 pour le tableau et ses cellules */
+}
+
+.weather-table table th, .weather-table table td {
+    padding: 10px; /* Ajoute un espacement intérieur de 10 pixels aux cellules du tableau */
+    text-align: center; /* Centre le contenu des cellules du tableau horizontalement */
+    border-bottom: 1px solid #B3CDE0; /* Ajoute une bordure inférieure de 1 pixel solide avec la couleur #B3CDE0 à chaque cellule du tableau */
+}
+
+#back-button {
+    position: absolute; /* Définit la position de l'élément comme étant absolue par rapport à son conteneur */
+    top: 20px; /* Définit la position de l'élément à 20 pixels du haut */
+    left: 20px; /* Définit la position de l'élément à 20 pixels de la gauche */
+    background-color: #B3CDE0; /* Définit la couleur de fond de l'élément */
+    color: #ffffff; /* Définit la couleur du texte de l'élément */
+    padding: 10px; /* Ajoute un espacement intérieur de 10 pixels à l'élément */
+    border: none; /* Supprime la bordure de l'élément */
+    border-radius: 5px; /* Définit un rayon de bordure de 5 pixels pour créer des coins arrondis */
+    cursor: pointer; /* Change le curseur de la souris lorsque survolé */
+    font-size: 16px; /* Définit la taille de police à 16 pixels */
+    text-decoration: none; /* Désactive le soulignement du lien */
+}
+
+#back-button:hover {
+    background-color: #ffffff; /* Change la couleur de fond de l'élément au survol */
+    color: #000000; /* Change la couleur du texte de l'élément au survol */
+}
+
+/* Pour les écrans avec une largeur maximale de 400 pixels */
+@media screen and (max-width: 400px) {
+    .weather-table {
+        margin-top: 50px; /* Marge supérieure de 50 pixels */
+        width: 180px; /* Largeur de 180 pixels */
+        height: 220px; /* Hauteur de 220 pixels */
+    }
+    .weather-table table {
+        margin-top: 50px; /* Marge supérieure de 50 pixels */
+        font-size: 14px; /* Taille de police de 14 pixels */
+    }
+    #back-button {
+        font-size: 12px; /* Taille de police du bouton de retour de 12 pixels */
+    }
+}
+
+/* Pour les écrans avec une largeur minimale de 401 pixels et maximale de 600 pixels */
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .weather-table {
+        margin-top: 50px; /* Marge supérieure de 50 pixels */
+        width: 200px; /* Largeur de 200 pixels */
+        height: 240px; /* Hauteur de 240 pixels */
+    }
+    .weather-table table {
+        font-size: 16px; /* Taille de police de 16 pixels */
+    }
+    #back-button {
+        font-size: 14px; /* Taille de police du bouton de retour de 14 pixels */
+    }
+}
+
+/* Pour les écrans avec une largeur minimale de 601 pixels et maximale de 768 pixels */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .weather-table {
+        margin-top: 50px; /* Marge supérieure de 50 pixels */
+        width: 220px; /* Largeur de 220 pixels */
+        height: 260px; /* Hauteur de 260 pixels */
+    }
+    .weather-table table {
+        font-size: 18px; /* Taille de police de 18 pixels */
+    }
+    #back-button {
+        font-size: 16px; /* Taille de police du bouton de retour de 16 pixels */
+    }
+}
+
+/* Pour les écrans avec une largeur minimale de 769 pixels et maximale de 992 pixels */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .weather-table {
+        width: 240px; /* Largeur de 240 pixels */
+        height: 280px; /* Hauteur de 280 pixels */
+    }
+    .weather-table table {
+        font-size: 20px; /* Taille de police de 20 pixels */
+    }
+    #back-button {
+        font-size: 18px; /* Taille de police du bouton de retour de 18 pixels */
+    }
+}
+
+/* Pour les écrans avec une largeur minimale de 993 pixels et maximale de 1024 pixels */
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+    .weather-table {
+        width: 260px; /* Largeur de 260 pixels */
+        height: 300px; /* Hauteur de 300 pixels */
+        margin-top: 50px ; /* Marge supérieure de 50 pixels */
+    }
+    .weather-table table {
+        margin-top: 50px ; /* Marge supérieure de 50 pixels */
+        font-size: 22px; /* Taille de police de 22 pixels */
+    }
+    #back-button {
+        font-size: 20px; /* Taille de police du bouton de retour de 20 pixels */
+    }
+}
+
+/*   _  ____     __ ___
+    | |/ /\ \   / /| __ \
+    | ' /  \ \ / / | |_) |
+    | . \   \ V /  |  _ /
+    |_|\_\   \_/   |_| \_\ */

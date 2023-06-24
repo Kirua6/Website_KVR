@@ -1,0 +1,94 @@
+body {
+    /* Définition de l'image de fond */
+    background: url('https://img.freepik.com/psd-gratuit/modele-menu-cantine-scolaire_23-2148233170.jpg?w=996&t=st=1685185937~exp=1685186537~hmac=5b2a250fc0a6b2590aec1cf7654bc431ac83e08e565382fdbf18f1894ac1166e') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* Définition de la police de caractères */
+    font-family: Arial, sans-serif;
+    /* Configuration du positionnement et du style du contenu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* Taille de la police */
+    font-size: 22px;
+}
+
+.container {
+    /* Largeur et marges du conteneur */
+    width: 30%; 
+    margin: 0 auto 0 auto;
+    margin-top: 5%;
+    margin-right: 10%;  
+    /* Couleur de fond du conteneur */
+    background-color: #FDFBFC;  
+    /* Coins arrondis et ombre du conteneur */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #FDFBFC;
+    /* Configuration du positionnement et du style du contenu */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    /* Alignement du texte au centre */
+    text-align: center;
+}
+
+h1 {
+    /* Couleur du titre */
+    color: #333;
+    /* Marge inférieure du titre */
+    margin-bottom: 20px;
+}
+
+p {
+    /* Police de caractères du paragraphe */
+    font-family: "Trebuchet MS", sans-serif;
+    /* Couleur du paragraphe */
+    color: #5A9EAB;
+    /* Marges du paragraphe */
+    margin: 40px 0;
+    /* Taille de la police du paragraphe */
+    font-size: 30px;
+}
+
+.menu-item {
+    /* Marge inférieure de l'élément de menu */
+    margin-bottom: 30px;
+}
+
+.button-container {
+    /* Positionnement absolu de la boîte de boutons */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Rembourrage de la boîte de boutons */
+    padding: 10px;
+}
+
+.menu-button {
+    /* Couleur de fond du bouton de menu */
+    background-color: #333;
+    /* Couleur du texte du bouton de menu */
+    color: #fff;
+    /* Rembourrage du bouton de menu */
+    padding: 10px 20px;
+    /* Coins arrondis du bouton de menu */
+    border-radius: 5px;
+    /* Décoration du texte du bouton de menu */
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    /* Couleur de fond au survol du bouton de menu */
+    background-color: #444;
+}
+
+/*   _  ____     __ ___
+    | |/ /\ \   / /| __ \
+    | ' /  \ \ / / | |_) |
+    | . \   \ V /  |  _ /
+    |_|\_\   \_/   |_| \_\ */

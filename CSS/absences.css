@@ -1,0 +1,369 @@
+
+  body {
+    background-color: #b3cde0;  /* Couleur de fond du corps de la page */
+    font-family: Arial, sans-serif;  /* Police de caractères utilisée */
+    color: #333;  /* Couleur du texte */
+}
+
+form {
+    background-color: #f2f2f2;  /* Couleur de fond du formulaire */
+    padding: 20px;  /* Espace intérieur du formulaire */
+    border-radius: 10px;  /* Bordure arrondie du formulaire */
+    max-width: 500px;  /* Largeur maximale du formulaire */
+    margin: auto;  /* Centrer le formulaire horizontalement */
+    margin-top: 5px;  /* Marge supérieure du formulaire */
+}
+
+h2 {
+    text-align: center;  /* Alignement centré du titre h2 */
+    color: #5b9aa0;  /* Couleur du titre h2 */
+}
+
+label {
+    display: block;  /* Afficher chaque label sur une ligne */
+    margin-bottom: 5px;  /* Marge inférieure des labels */
+}
+
+input[type="text"], input[type="date"] {
+    width: 90%;  /* Largeur des champs de texte et de date */
+    padding: 10px;  /* Espace intérieur des champs de texte et de date */
+    margin-bottom: 20px;  /* Marge inférieure des champs de texte et de date */
+    border-radius: 5px;  /* Bordure arrondie des champs de texte et de date */
+    border: 1px solid #ccc;  /* Bordure des champs de texte et de date */
+}
+
+input[type="submit"] {
+    background-color: #5b9aa0;  /* Couleur de fond du bouton de soumission */
+    color: white;  /* Couleur du texte du bouton de soumission */
+    padding: 10px 20px;  /* Espace intérieur du bouton de soumission */
+    border: none;  /* Pas de bordure autour du bouton de soumission */
+    border-radius: 5px;  /* Bordure arrondie du bouton de soumission */
+    cursor: pointer;  /* Curseur en forme de main au survol du bouton de soumission */
+    width: 100%;  /* Largeur maximale du bouton de soumission */
+    font-size: 17px; /* Définit la taille du texte à 17px */
+}
+
+input[type="submit"]:hover {
+    background-color: #4c8a91;  /* Couleur de fond du bouton de soumission au survol */
+}
+
+.button-container {
+    text-align: left;  /* Alignement A gauche du conteneur de boutons */
+    margin-top: 20px;  /* Marge supérieure du conteneur de boutons */
+}
+
+.choix-button {
+    background-color: #5b9aa0;  /* Couleur de fond du bouton de choix */
+    color: white;  /* Couleur du texte du bouton de choix */
+    padding: 10px 20px;  /* Espace intérieur du bouton de choix */
+    text-decoration: none;  /* Pas de soulignement du texte du bouton de choix */
+    border-radius: 5px;  /* Bordure arrondie du bouton de choix */
+    transition: background-color 0.3s ease;  /* Transition en douceur de la couleur de fond */
+}
+
+.choix-button:hover {
+    background-color: #4c8a91;  /* Couleur de fond du bouton de choix au survol */
+}
+
+.input-container {
+    align-items: center; /* Centre les éléments enfants verticalement dans le conteneur */
+    justify-content: space-between; /* Distribue uniformément les éléments enfants horizontalement dans le conteneur avec un espace égal entre eux */
+    margin-bottom: 10px; /* Ajoute une marge en bas de 10px */
+}
+
+.input-container2 {
+    display: flex; /* Utilise le modèle de boîte flexible pour les éléments enfants */
+    align-items: center; /* Centre les éléments enfants verticalement dans le conteneur */
+    margin-bottom: 10px; /* Ajoute une marge en bas de 10px */
+}
+
+.input-container2 input {
+    margin-left: 10px;
+}
+
+.mon-formulaire {
+    background-color: #f2f2f2;  /* Couleur de fond du formulaire */
+    padding: 10px;  /* Espace intérieur du formulaire */
+    border-radius: 10px;  /* Bordure arrondie du formulaire */
+    max-width: 520px;  /* Largeur maximale du formulaire */
+    margin: auto;  /* Centrer le formulaire horizontalement */
+    margin-top: 10px;  /* Marge supérieure du formulaire */ 
+
+}
+
+.submit2 {
+    background-color: #5b9aa0;  /* Couleur de fond du bouton de soumission */
+    color: white;  /* Couleur du texte du bouton de soumission */
+    padding: 10px 0px;  /* Espace intérieur du bouton de soumission */
+    border: none;  /* Pas de bordure autour du bouton de soumission */
+    border-radius: 5px;  /* Bordure arrondie du bouton de soumission */
+    cursor: pointer;  /* Curseur en forme de main au survol du bouton de soumission */
+    width: 100%;  /* Largeur maximale du bouton de soumission */
+    text-align: center;  /* Centrage du texte à l'intérieur du bouton */
+    font-family: Arial, sans-serif;  /* Police de caractères utilisée */
+    font-size: 17px; /* Définit la taille du texte à 17px */
+}
+/* Media Queries */
+@media screen and (max-width: 400px) {
+    /* Pour les écrans avec une largeur maximale de 400px */
+    form, .mon-formulaire {
+        max-width: 100%; /* Définir la largeur maximale à 100% */
+        padding: 10px; /* Ajouter un padding de 10px */
+    }
+    input[type="text"], input[type="date"], input[type="submit"], .submit2 {
+        font-size: 14px; /* Définir la taille de police à 14px */
+        padding: 5px 10px; /* Ajouter un padding de 5px en haut/bas et 10px à gauche/droite */
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    /* Pour les écrans avec une largeur minimale de 401px et une largeur maximale de 600px */
+    form, .mon-formulaire {
+        max-width: 100%; /* Définir la largeur maximale à 100% */
+        padding: 15px; /* Ajouter un padding de 15px */
+    }
+    input[type="text"], input[type="date"], input[type="submit"], .submit2 {
+        font-size: 15px; /* Définir la taille de police à 15px */
+        padding: 7px 14px; /* Ajouter un padding de 7px en haut/bas et 14px à gauche/droite */
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    /* Pour les écrans avec une largeur minimale de 601px et une largeur maximale de 768px */
+    form, .mon-formulaire {
+        max-width: 60%; /* Définir la largeur maximale à 60% */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    /* Pour les écrans avec une largeur minimale de 769px et une largeur maximale de 992px */
+    form, .mon-formulaire {
+        max-width: 60%; /* Définir la largeur maximale à 60% */
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+    /* Pour les écrans avec une largeur minimale de 993px et une largeur maximale de 1024px */
+    form, .mon-formulaire {
+        max-width: 60%; /* Définir la largeur maximale à 60% */
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* Pour les écrans avec une largeur minimale de 1025px et une largeur maximale de 1200px */
+    form, .mon-formulaire {
+        max-width: 60%; /* Définir la largeur maximale à 60% */
+    }
+}
+
+/* Partie pokeball d'information */
+  
+/* Centre l'élément au milieu de son conteneur */
+.center {
+  position: absolute; /* Position absolue pour centrer l'élément */
+  top: 50%; /* Définit la position verticale au milieu du conteneur */
+  left: 50%; /* Définit la position horizontale au milieu du conteneur */
+  transform: translate(-50%, -50%); /* Translate pour centrer précisément l'élément */
+}
+
+/* Conteneur fixe en bas à gauche de la page */
+.container {
+  position: fixed; /* Position fixe pour rester en place lors du défilement */
+  bottom: 10px; /* Distance de 10 pixels depuis le bas de la fenêtre */
+  left: 0; /* Collé sur le bord gauche de la fenêtre */
+  height: 200px; /* Hauteur de 200 pixels */
+  width: 200px; /* Largeur de 200 pixels */
+}
+
+/* Classe pour le style d'une pokeball */
+.pokeball {
+  background: #232323; /* Couleur d'arrière-plan */
+  width: 100px; /* Largeur de 100 pixels */
+  height: 100px; /* Hauteur de 100 pixels */
+  border-radius: 100%; /* Forme arrondie en cercle */
+  z-index: 2; /* Ordre d'empilement pour la superposition */
+  position: relative; /* Position relative pour les éléments enfants */
+  cursor: pointer; /* Curseur en forme de pointeur au survol */
+}
+
+/* Élément avant la pokeball (la partie supérieure colorée) */
+.pokeball::before {
+  content: ""; /* Contenu généré par le pseudo-élément */
+  height: 50%; /* Hauteur de 50% de la pokeball */
+  width: 105%; /* Largeur de 105% pour déborder légèrement */
+  background: linear-gradient(#5B9AA0, #00eaff); /* Dégradé linéaire de couleurs */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  left: -3px; /* Décalage de -3 pixels vers la gauche */
+  border-radius: 200px 200px 0px 0px; /* Forme arrondie pour le haut de la pokeball */
+}
+
+/* Élément après la pokeball (la partie inférieure blanche avec ombre) */
+.pokeball::after {
+  content: ""; /* Contenu généré par le pseudo-élément */
+  height: 50%; /* Hauteur de 50% de la pokeball */
+  width: 105%; /* Largeur de 105% pour déborder légèrement */
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  bottom: -3px; /* Décalage de -3 pixels vers le bas */
+  left: -3px; /* Décalage de -3 pixels vers la gauche */
+  border-radius: 0px 0px 200px 200px; /* Forme arrondie pour le bas de la pokeball */
+  box-shadow: inset -10px 0px 0px rgba(0, 0, 0, 0.2); /* Ombre interne à gauche de la pokeball */
+  animation: shadowShadow 0.5s infinite; /* Animation pour l'ombre interne */
+}
+
+/* Bouton à l'intérieur de la pokeball */
+.pokeball button {
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  height: 32px; /* Hauteur de 32 pixels */
+  width: 32px; /* Largeur de 32 pixels */
+  border-radius: 100%; /* Forme arrondie en cercle */
+  border: 5px solid #202020; /* Bordure de 5 pixels solide avec une couleur spécifique */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  position: relative; /* Position relative pour se superposer à la pokeball */
+}
+
+/* Texte à l'intérieur de la pokeball */
+.pokeball .pokeball-text {
+  position: absolute; /* Position absolue pour placer le texte */
+  bottom: 10%; /* Distance de 10% depuis le bas de la pokeball */
+  width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
+  text-align: center; /* Alignement du texte au centre */
+  color: #232323; /* Couleur du texte */
+  font-family: 'Open Sans', sans-serif; /* Police de caractères */
+  font-size: 20px; /* Taille de police de 20 pixels */
+  z-index: 3; /* Ordre d'empilement pour la superposition */
+}
+
+/* Élément brillant sur la pokeball */
+.shine {
+  height: 10px; /* Hauteur de 10 pixels */
+  width: 20px; /* Largeur de 20 pixels */
+  border-radius: 200px; /* Forme arrondie en cercle */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  z-index: 2; /* Ordre d'empilement pour la superposition */
+  left: 16px; /* Décalage de 16 pixels vers la gauche */
+  top: 14px; /* Décalage de 14 pixels vers le haut */
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  transform: rotate(-35deg); /* Rotation de l'élément de -35 degrés */
+}
+
+/* Ombre de la pokeball */
+.pokeballShadow {
+  background: #202020; /* Couleur d'arrière-plan */
+  opacity: 0.5; /* Opacité de 0.5 (semi-transparent) */
+  height: 15px; /* Hauteur de 15 pixels */
+  width: 110px; /* Largeur de 110 pixels */
+  top: 220px; /* Décalage de 220 pixels vers le bas */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  border-radius: 100%; /* Forme arrondie en cercle */
+}
+
+/* Animation de la pokeball */
+.animate {
+  animation: animatePokeball 2s ease-in-out infinite; /* Animation de 2 secondes en boucle */
+  transform-origin: bottom center; /* Point d'origine de la transformation */
+  transition: all 0.5s ease; /* Transition pour une animation fluide */
+}
+
+/* Animation de l'ombre de la pokeball */
+.shadowAnimate {
+  animation: shadowMove 2s ease-in-out infinite; /* Animation de 2 secondes en boucle */
+  transition: all 0.5s ease; /* Transition pour une animation fluide */
+}
+
+/* Animation de déplacement de l'ombre */
+@keyframes shadowMove {
+  0% {
+    left: 50%; /* Déplacement vers la gauche à 50% */
+  }
+  50% {
+    left: 56%; /* Déplacement vers la gauche à 56% */
+  }
+  100% {
+    left: 50%; /* Retour à la position initiale */
+  }
+}
+
+/* Animation de la pokeball */
+@keyframes animatePokeball {
+  0% {
+    left: 48%; /* Déplacement vers la gauche à 48% */
+    transform: rotate(-10deg); /* Rotation de -10 degrés */
+  }
+  50% {
+    left: 52%; /* Déplacement vers la gauche à 52% */
+    transform: rotate(10deg); /* Rotation de 10 degrés */
+  }
+  100% {
+    left: 48%; /* Retour à la position initiale */
+    transform: rotate(-10deg); /* Rotation de -10 degrés */
+  }
+}
+
+/* Bulle de dialogue */
+.bubble {
+  height: 90px; /* Hauteur de 90 pixels */
+  width: 170px; /* Largeur de 170 pixels */
+  background: linear-gradient(#5B9AA0, #00eaff); /* Dégradé linéaire de couleurs */
+  border-radius: 20px; /* Forme arrondie avec un rayon de 20 pixels */
+  position: absolute; /* Position absolue pour se superposer à l'élément parent */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  top: 15px; /* Décalage de 15 pixels vers le haut */
+  left: -15px; /* Décalage de -15 pixels vers la gauche */
+  transition: opacity 1s; /* Transition pour une animation fluide de l'opacité */
+}
+
+/* Texte à l'intérieur de la bulle de dialogue */
+.bubble span {
+  color: #000000; /* Couleur du texte */
+  font-family: "Trebuchet MS", sans-serif; /* Police de caractères */
+  position: relative; /* Position relative pour le positionnement du texte */
+  top: 2px; /* Décalage de 2 pixels vers le haut */
+  font-size: 20px; /* Taille de police de 20 pixels */
+  left: 10px; /* Décalage de 10 pixels vers la gauche */
+}
+
+/* Flèche de la bulle de dialogue */
+.bubbleArrow {
+  position: relative; /* Position relative pour se superposer à la bulle de dialogue */
+  width: 0; /* Largeur nulle */
+  height: 0; /* Hauteur nulle */
+  border-left: 15px solid transparent; /* Bordure de 15 pixels solide et transparente à gauche */
+  border-right: 15px solid transparent; /* Bordure de 15 pixels solide et transparente à droite */
+  border-top: 20px solid #050505; /* Bordure de 20 pixels solide avec une couleur spécifique en haut */
+  left: 40px; /* Décalage de 40 pixels vers la gauche */
+  top: 60px; /* Décalage de 60 pixels vers le bas */
+}
+
+/* Animation d'apparition de la bulle de dialogue */
+.bubbleAnimation {
+  top: 300px; /* Décalage de 300 pixels vers le bas */
+  position: absolute; /* Position absolue pour animer le déplacement */
+  opacity: 0; /* Opacité de 0 (invisible) */
+  transition: all 0.5s ease-in-out; /* Transition pour une animation fluide */
+  transform: scale(0); /* Échelle de transformation à 0 (invisible) */
+}
+
+/* Animation de la bulle de dialogue */
+.bubbleAnimation2 {
+  position: absolute; /* Position absolue pour animer le déplacement */
+  top: -120px; /* Décalage de -120 pixels vers le haut */
+  opacity: 1; /* Opacité de 1 (visible) */
+  transition: all 0.5s ease-in-out; /* Transition pour une animation fluide */
+  transform: scale(1); /* Échelle de transformation à 1 (visible) */
+}
+
+/* Conteneur de la bulle de dialogue */
+.bubbleContainer {
+  position: absolute; /* Position absolue pour placer le conteneur */
+  top: -130px; /* Décalage de -130 pixels vers le haut */
+  left: 130px; /* Décalage de 130 pixels vers la gauche */
+  height: 80px; /* Hauteur de 80 pixels */
+  width: 140px; /* Largeur de 140 pixels */
+}
+
+/*   _  ____     __ ___
+    | |/ /\ \   / /| __ \
+    | ' /  \ \ / / | |_) |
+    | . \   \ V /  |  _ /
+    |_|\_\   \_/   |_| \_\ */

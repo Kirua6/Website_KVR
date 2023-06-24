@@ -1,0 +1,428 @@
+.navbar-mobile, .navbar-desktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-desktop {
+  display: none; /* Cacher la barre de navigation de bureau sur les petits écrans */
+}
+
+/* Media query for screens with a minimum width of 768px */
+@media screen and (min-width: 768px) {
+  .navbar-mobile {
+      display: none; /* Cacher la barre de navigation mobile sur les grands écrans */
+  }
+
+  .navbar-desktop {
+      display: block; /* Afficher la barre de navigation de bureau sur les grands écrans */
+  }
+}
+
+body {
+    font-family: Arial, sans-serif; /* Utilise la police Arial ou une police sans empattement par défaut pour le texte du corps */
+    background-color: #B3CDE0; /* Définit la couleur de fond du corps */
+    color: #5B9AA0; /* Définit la couleur du texte du corps */
+    display: flex; /* Utilise un modèle d'affichage flexible pour les éléments du corps */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+    align-items: center; /* Centre verticalement les éléments du corps */
+    height: 100vh; /* Définit la hauteur du corps à 100% de la hauteur de la vue */
+    margin: 0; /* Supprime les marges par défaut du corps */
+    position: relative; /* Définit la position relative pour les éléments du corps */
+    padding: 0px 330px; /* Ajoute un padding de 330 pixels à gauche et à droite du corps pour éviter que les éléments ne soient trop près du bord */
+}
+
+.day-visual-container {
+    width: 300px; /* Définit la largeur du conteneur visuel à 300 pixels */
+    background-color: #F2F2F2; /* Définit la couleur de fond du conteneur visuel */
+    padding: 30px; /* Ajoute un espace intérieur de 30 pixels autour du contenu du conteneur visuel */
+    border-radius: 5px; /* Arrondit les coins du conteneur visuel avec un rayon de 5 pixels */
+    text-align: center; /* Centre le texte à l'intérieur du conteneur visuel */
+}
+
+form {
+    width: 300px; /* Définit la largeur du formulaire à 300 pixels */
+    background-color: #F2F2F2; /* Définit la couleur de fond du formulaire */
+    padding: 30px; /* Ajoute un espace intérieur de 30 pixels autour du contenu du formulaire */
+    border-radius: 5px; /* Arrondit les coins du formulaire avec un rayon de 5 pixels */
+    margin-right: 150px; /* Ajoute une marge à droite pour le formulaire */
+}
+
+h2 {
+    text-align: center; /* Centre le texte des titres de niveau 2 (h2) */
+    margin-bottom: 20px; /* Ajoute une marge inférieure de 20 pixels aux titres de niveau 2 (h2) */
+}
+
+label {
+    display: block; /* Affiche les balises <label> comme des blocs, les rendant sur une nouvelle ligne */
+    margin-bottom: 5px; /* Ajoute une petite marge inférieure aux balises <label> */
+    color: #000000; /* Définit la couleur du texte des balises <label> */
+}
+
+input[type=text], select {
+    width: 100%; /* Définit la largeur des champs de saisie de texte et des menus déroulants à 100% de la largeur disponible */
+    padding: 10px; /* Ajoute un espace intérieur de 10 pixels autour des champs de saisie de texte et des menus déroulants */
+    margin-bottom: 20px; /* Ajoute une marge inférieure de 20 pixels aux champs de saisie de texte et aux menus déroulants */
+    border: 1px solid #93a1a1; /* Définit une bordure de 1 pixel avec une couleur spécifique */
+    border-radius: 5px; /* Arrondit les coins des champs de saisie de texte et des menus déroulants avec un rayon de 5 pixels */
+}
+
+input[type=submit] {
+    width: 100%; /* Définit la largeur du bouton de soumission à 100% de la largeur disponible */
+    padding: 10px; /* Ajoute un espace intérieur de 10 pixels autour du bouton de soumission */
+    border: none; /* Supprime la bordure du bouton de soumission */
+    background-color: #586e75; /* Définit la couleur de fond du bouton de soumission */
+    color: white; /* Définit la couleur du texte du bouton de soumission */
+    cursor: pointer; /* Change le curseur de la souris en une main pointant vers le bouton de soumission */
+    border-radius: 5px; /* Arrondit les coins du bouton de soumission avec un rayon de 5 pixels */
+}
+
+input[type=submit]:hover {
+    background-color: #839496; /* Change la couleur de fond du bouton de soumission lorsqu'il est survolé */
+}
+
+.choix-button {
+    background-color: #586e75; /* Définit la couleur de fond du bouton avec la classe "choix-button" */
+    color: white; /* Définit la couleur du texte du bouton avec la classe "choix-button" */
+    padding: 10px 20px; /* Ajoute un espace intérieur de 10 pixels en haut et en bas, et de 20 pixels à gauche et à droite du bouton avec la classe "choix-button" */
+    text-decoration: none; /* Supprime la décoration de texte par défaut (soulignement) du bouton avec la classe "choix-button" */
+    border-radius: 5px; /* Arrondit les coins du bouton avec la classe "choix-button" avec un rayon de 5 pixels */
+    transition: background-color 0.3s ease; /* Ajoute une transition en douceur de 0,3 seconde pour le changement de couleur de fond lorsqu'il est survolé */
+    position: absolute; /* Positionne le bouton de manière absolue par rapport à son conteneur */
+    top: 10px; /* Positionne le bouton en haut de la page */
+    left: 10px; /* Positionne le bouton à gauche de la page */
+}
+
+.choix-button:hover {
+    background-color: #839496; /* Change la couleur de fond du bouton avec la classe "choix-button" lorsqu'il est survolé */
+}
+
+.day-button {
+    width: 80%; /* Définit la largeur du bouton à 80% de la largeur disponible */
+    padding: 15px; /* Ajoute un espace intérieur de 15 pixels autour du bouton */
+    border: none; /* Supprime la bordure du bouton */
+    background-color: #586e75; /* Définit la couleur de fond du bouton */
+    color: white; /* Définit la couleur du texte du bouton */
+    cursor: pointer; /* Change le curseur de la souris en une main pointant vers le bouton */
+    border-radius: 5px; /* Arrondit les coins du bouton avec un rayon de 5 pixels */
+    margin-bottom: 41px; /* Ajoute une marge en bas de chaque bouton */
+}
+
+.day-button:hover {
+    background-color: #839496; /* Change la couleur de fond du bouton lorsqu'il est survolé */
+}
+
+/* Media Query pour les écrans ayant une largeur maximale de 400px */
+@media screen and (max-width: 400px) {
+  body {
+    padding: 0px 15px; /* Ajoute un padding de 0 pixels à gauche et à droite du corps */
+  }
+
+  .day-visual-container,
+  form {
+    width: 100%; /* Définit la largeur à 100% pour les conteneurs day-visual et form */
+  }
+
+  form {
+    margin-right: 0; /* Supprime la marge à droite du formulaire */
+  }
+}
+
+/* Media Query pour les écrans ayant une largeur minimale de 401px et une largeur maximale de 600px */
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  body {
+    padding: 0px 30px; /* Ajoute un padding de 0 pixels à gauche et à droite du corps */
+  }
+
+  .day-visual-container,
+  form {
+    width: 100%; /* Définit la largeur à 100% pour les conteneurs day-visual et form */
+  }
+
+  form {
+    margin-left: 10px; /* Ajoute une marge de 10 pixels à gauche du formulaire */
+  }
+}
+
+/* Media Query pour les écrans ayant une largeur minimale de 601px et une largeur maximale de 768px */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  body {
+    padding: 0px 60px; /* Ajoute un padding de 0 pixels à gauche et à droite du corps */
+    flex-direction: column; /* Change la direction de la mise en page en colonne */
+  }
+
+  form {
+    width: 60%; /* Définit la largeur du formulaire à 60% */
+    margin-left: 100px; /* Ajoute une marge de 100 pixels à gauche du formulaire */
+    margin-right: 30px; /* Ajoute une marge de 30 pixels à droite du formulaire */
+    margin-bottom: 60px; /* Ajoute une marge de 60 pixels en bas du formulaire */
+  }
+
+  .form-container,
+  .day-visual-container {
+    margin-bottom: 10px; /* Ajoute une marge de 10 pixels en bas des conteneurs form et day-visual */
+    width: 100%; /* Définit la largeur à 100% pour les conteneurs form et day-visual */
+    margin-right: 0; /* Supprime la marge à droite des conteneurs form et day-visual */
+  }
+}
+
+/* Media Query pour les écrans ayant une largeur minimale de 769px et une largeur maximale de 992px */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    padding: 0px 120px; /* Ajoute un padding de 0 pixels à gauche et à droite du corps */
+  }
+
+  .day-visual-container,
+  form {
+    width: 100%; /* Définit la largeur à 100% pour les conteneurs day-visual et form */
+  }
+
+  form {
+    margin-right: 60px; /* Ajoute une marge de 60 pixels à droite du formulaire */
+  }
+}
+
+/* Media Query pour les écrans ayant une largeur minimale de 993px et une largeur maximale de 1024px */
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+  body {
+    padding: 0px 165px; /* Ajoute un padding de 0 pixels à gauche et à droite du corps */
+  }
+
+  .day-visual-container,
+  form {
+    width: 200px; /* Définit la largeur à 200 pixels pour les conteneurs day-visual et form */
+  }
+
+  form {
+    margin-right: 55px; /* Ajoute une marge de 55 pixels à droite du formulaire */
+    margin-left: 100px; /* Ajoute une marge de 100 pixels à gauche du formulaire */
+  }
+}
+
+/* Media Query pour les écrans ayant une largeur minimale de 1025px et une largeur maximale de 1500px */
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+  body {
+    padding: 0px 330px; /* Ajoute un padding de 0 pixels à gauche et à droite du corps */
+  }
+
+  .day-visual-container,
+  form {
+    width: 300px; /* Définit la largeur à 300 pixels pour les conteneurs day-visual et form */
+  }
+
+  form {
+    margin-right: 150px; /* Ajoute une marge de 150 pixels à droite du formulaire */
+  }
+}
+
+/* Media Query pour les écrans ayant une largeur minimale de 1600px */
+@media screen and (min-width: 1600px) {
+  body {
+    padding: 0px 330px; /* Ajoute un padding de 0 pixels à gauche et à droite du corps */
+  }
+
+  .day-visual-container,
+  form {
+    width: 300px; /* Définit la largeur à 300 pixels pour les conteneurs day-visual et form */
+  }
+
+  form {
+    margin-right: 150px; /* Ajoute une marge de 150 pixels à droite du formulaire */
+    margin-left: 225px; /* Ajoute une marge de 225 pixels à gauche du formulaire */
+  }
+}
+
+/* Partie pokeball d'information */
+
+.center {
+  position: absolute; /* Position absolue pour centrer l'élément */
+  top: 50%; /* Définit la position verticale au milieu du conteneur */
+  left: 50%; /* Définit la position horizontale au milieu du conteneur */
+  transform: translate(-50%, -50%); /* Translate pour centrer précisément l'élément */
+}
+
+.container {
+  position: fixed; /* Position fixe pour rester en place lors du défilement */
+  bottom: 10px; /* Distance de 10 pixels depuis le bas de la fenêtre */
+  left: 0; /* Collé sur le bord gauche de la fenêtre */
+  height: 200px; /* Hauteur de 200 pixels */
+  width: 200px; /* Largeur de 200 pixels */
+}
+
+.pokeball {
+  background: #232323; /* Couleur d'arrière-plan */
+  width: 100px; /* Largeur de 100 pixels */
+  height: 100px; /* Hauteur de 100 pixels */
+  border-radius: 100%; /* Forme arrondie en cercle */
+  z-index: 2; /* Ordre d'empilement pour la superposition */
+  position: relative; /* Position relative pour les éléments enfants */
+  cursor: pointer; /* Curseur en forme de pointeur au survol */
+}
+
+.pokeball::before {
+  content: ""; /* Contenu généré par le pseudo-élément */
+  height: 50%; /* Hauteur de 50% de la pokeball */
+  width: 105%; /* Largeur de 105% pour déborder légèrement */
+  background: linear-gradient(#586E75, #2c97b7); /* Dégradé linéaire de couleurs */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  left: -3px; /* Décalage de -3 pixels vers la gauche */
+  border-radius: 200px 200px 0px 0px; /* Forme arrondie pour le haut de la pokeball */
+}
+
+.pokeball::after {
+  content: ""; /* Contenu généré par le pseudo-élément */
+  height: 50%; /* Hauteur de 50% de la pokeball */
+  width: 105%; /* Largeur de 105% pour déborder légèrement */
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  bottom: -3px; /* Décalage de -3 pixels vers le bas */
+  left: -3px; /* Décalage de -3 pixels vers la gauche */
+  border-radius: 0px 0px 200px 200px; /* Forme arrondie pour le bas de la pokeball */
+  box-shadow: inset -10px 0px 0px rgba(0, 0, 0, 0.2); /* Ombre interne à gauche de la pokeball */
+  animation: shadowShadow 0.5s infinite; /* Animation pour l'ombre interne */
+}
+
+.pokeball button {
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  height: 32px; /* Hauteur de 32 pixels */
+  width: 32px; /* Largeur de 32 pixels */
+  border-radius: 100%; /* Forme arrondie en cercle */
+  border: 5px solid #202020; /* Bordure de 5 pixels solide avec une couleur spécifique */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  position: relative; /* Position relative pour se superposer à la pokeball */
+}
+
+.pokeball .pokeball-text {
+  position: absolute; /* Position absolue pour placer le texte */
+  bottom: 10%; /* Distance de 10% depuis le bas de la pokeball */
+  width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
+  text-align: center; /* Alignement du texte au centre */
+  color: #232323; /* Couleur du texte */
+  font-family: 'Open Sans', sans-serif; /* Police de caractères */
+  font-size: 20px; /* Taille de police de 20 pixels */
+  z-index: 3; /* Ordre d'empilement pour la superposition */
+}
+
+.shine {
+  height: 10px; /* Hauteur de 10 pixels */
+  width: 20px; /* Largeur de 20 pixels */
+  border-radius: 200px; /* Forme arrondie en cercle */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  z-index: 2; /* Ordre d'empilement pour la superposition */
+  left: 16px; /* Décalage de 16 pixels vers la gauche */
+  top: 14px; /* Décalage de 14 pixels vers le haut */
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  transform: rotate(-35deg); /* Rotation de l'élément de -35 degrés */
+}
+
+.pokeballShadow {
+  background: #202020; /* Couleur d'arrière-plan */
+  opacity: 0.5; /* Opacité de 0.5 (semi-transparent) */
+  height: 15px; /* Hauteur de 15 pixels */
+  width: 110px; /* Largeur de 110 pixels */
+  top: 220px; /* Décalage de 220 pixels vers le bas */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  border-radius: 100%; /* Forme arrondie en cercle */
+}
+
+.animate {
+  animation: animatePokeball 2s ease-in-out infinite; /* Animation de 2 secondes en boucle */
+  transform-origin: bottom center; /* Point d'origine de la transformation */
+  transition: all 0.5s ease; /* Transition pour une animation fluide */
+}
+
+.shadowAnimate {
+  animation: shadowMove 2s ease-in-out infinite; /* Animation de 2 secondes en boucle */
+  transition: all 0.5s ease; /* Transition pour une animation fluide */
+}
+
+@keyframes shadowMove {
+  0% {
+    left: 50%; /* Déplacement vers la gauche à 50% */
+  }
+  50% {
+    left: 56%; /* Déplacement vers la gauche à 56% */
+  }
+  100% {
+    left: 50%; /* Retour à la position initiale */
+  }
+}
+
+@keyframes animatePokeball {
+  0% {
+    left: 48%; /* Déplacement vers la gauche à 48% */
+    transform: rotate(-10deg); /* Rotation de -10 degrés */
+  }
+  50% {
+    left: 52%; /* Déplacement vers la gauche à 52% */
+    transform: rotate(10deg); /* Rotation de 10 degrés */
+  }
+  100% {
+    left: 48%; /* Retour à la position initiale */
+    transform: rotate(-10deg); /* Rotation de -10 degrés */
+  }
+}
+
+.bubble {
+  height: 110px; /* Hauteur de 110 pixels */
+  width: 170px; /* Largeur de 170 pixels */
+  background: linear-gradient(#586E75, #2c97b7); /* Dégradé linéaire de couleurs */
+  border-radius: 20px; /* Forme arrondie avec un rayon de 20 pixels */
+  position: absolute; /* Position absolue pour se superposer à l'élément parent */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  top: 15px; /* Décalage de 15 pixels vers le haut */
+  left: -15px; /* Décalage de -15 pixels vers la gauche */
+  transition: opacity 1s; /* Transition pour une animation fluide de l'opacité */
+}
+
+.bubble span {
+  color: #ffffff; /* Couleur du texte */
+  font-family: "Trebuchet MS", sans-serif; /* Police de caractères */
+  position: relative; /* Position relative pour le positionnement du texte */
+  top: 10px; /* Décalage de 10 pixels vers le haut */
+  font-size: 20px; /* Taille de police de 20 pixels */
+  left: 25px; /* Décalage de 25 pixels vers la gauche */
+}
+
+.bubbleArrow {
+  position: relative; /* Position relative pour se superposer à la bulle de dialogue */
+  width: 0; /* Largeur nulle */
+  height: 0; /* Hauteur nulle */
+  border-left: 15px solid transparent; /* Bordure de 15 pixels solide et transparente à gauche */
+  border-right: 15px solid transparent; /* Bordure de 15 pixels solide et transparente à droite */
+  border-top: 20px solid #050505; /* Bordure de 20 pixels solide avec une couleur spécifique en haut */
+  left: 40px; /* Décalage de 40 pixels vers la gauche */
+  top: 60px; /* Décalage de 60 pixels vers le bas */
+}
+
+.bubbleAnimation {
+  top: 300px; /* Décalage de 300 pixels vers le bas */
+  position: absolute; /* Position absolue pour animer le déplacement */
+  opacity: 0; /* Opacité de 0 (invisible) */
+  transition: all 0.5s ease-in-out; /* Transition pour une animation fluide */
+  transform: scale(0); /* Échelle de transformation à 0 (invisible) */
+}
+
+.bubbleAnimation2 {
+  position: absolute; /* Position absolue pour animer le déplacement */
+  top: -120px; /* Décalage de -120 pixels vers le haut */
+  opacity: 1; /* Opacité de 1 (visible) */
+  transition: all 0.5s ease-in-out; /* Transition pour une animation fluide */
+  transform: scale(1); /* Échelle de transformation à 1 (visible) */
+}
+
+.bubbleContainer {
+  position: absolute; /* Position absolue pour placer le conteneur */
+  top: -130px; /* Décalage de -130 pixels vers le haut */
+  left: 130px; /* Décalage de 130 pixels vers la gauche */
+  height: 80px; /* Hauteur de 80 pixels */
+  width: 140px; /* Largeur de 140 pixels */
+}
+
+/*   _  ____     __ ___
+    | |/ /\ \   / /| __ \
+    | ' /  \ \ / / | |_) |
+    | . \   \ V /  |  _ /
+    |_|\_\   \_/   |_| \_\ */

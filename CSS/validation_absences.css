@@ -1,0 +1,203 @@
+/* Définition des styles pour le corps de la page */
+body {
+  font-family: Arial, sans-serif; /* Utilise la police Arial ou une police sans empattement */
+  background-color: #1e3f54; /* Définit la couleur de fond du corps de la page */
+  padding: 20px; /* Ajoute un espace de 20 pixels autour du contenu du corps de la page */
+}
+
+/* Définition des styles pour les tableaux */
+table {
+  border-collapse: collapse; /* Fusionne les bordures des cellules du tableau */
+  width: 100%; /* Définit la largeur du tableau à 100% de la largeur disponible */
+  color: rgb(255, 255, 255); /* Définit la couleur du texte dans les cellules du tableau */
+}
+
+/* Définition des styles pour le tableau, les en-têtes de colonne et les cellules */
+table, th, td {
+  border: 1px solid #ddd; /* Définit une bordure de 1 pixel avec une couleur grise pour le tableau, les en-têtes de colonne et les cellules */
+  padding: 15px; /* Ajoute un espace de 15 pixels à l'intérieur des cellules du tableau */
+}
+
+/* Définition des styles pour les en-têtes de colonne */
+th {
+  background-color: #b3cde0; /* Définit la couleur de fond des en-têtes de colonne */
+  color: rgb(0, 0, 0); /* Définit la couleur du texte des en-têtes de colonne */
+}
+
+/* Définition des styles pour les lignes de tableau impaires */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Définit la couleur de fond des lignes de tableau impaires */
+}
+
+/* Définition des styles pour les cellules du tableau */
+td {
+  background-color: rgba(255, 255, 255, 0.621); /* Définit la couleur de fond des cellules du tableau avec une opacité de 0,621 */
+  color: #000000; /* Définit la couleur du texte dans les cellules du tableau */
+}
+
+/* Définition des styles pour la légende */
+caption {
+  padding: 10px; /* Ajoute un espace de 10 pixels autour de la légende */
+  caption-side: top; /* Place la légende au-dessus du tableau */
+  text-align: left; /* Aligne le texte de la légende à gauche */
+  font-size: 24px; /* Définit la taille de police de la légende à 24 pixels */
+  font-weight: bold; /* Met le texte de la légende en gras */
+}
+
+/* Définition des styles pour les paragraphes */
+p {
+  color: red; /* Définit la couleur du texte des paragraphes en rouge */
+}
+
+/* Définition des styles pour le bouton "absences-button" */
+.absences-button {
+  display: inline-block; /* Affiche le bouton en tant qu'élément en ligne */
+  padding: 10px 20px; /* Ajoute un espace de 10 pixels en haut et en bas, et 20 pixels à gauche et à droite du bouton */
+  color: #000000; /* Définit la couleur du texte du bouton */
+  background-color: #b3cde0; /* Définit la couleur de fond du bouton */
+  border: none; /* Supprime la bordure du bouton */
+  border-radius: 5px; /* Arrondit les coins du bouton */
+  text-decoration: none; /* Supprime la décoration du texte du bouton */
+  font-weight: bold; /* Met le texte du bouton en gras */
+  margin-bottom: 20px; /* Ajoute un espace de 20 pixels en bas du bouton */
+}
+
+/* Définition des styles lorsque le curseur survole le bouton "absences-button" */
+.absences-button:hover {
+  background-color: #000000; /* Définit la couleur de fond du bouton survolé */
+  color: #b3cde0; /* Définit la couleur du texte du bouton survolé */
+}
+
+/* Définition des styles pour le bouton "Supprimer" */
+input[type="submit"] {
+  display: inline-block; /* Affiche le bouton en tant qu'élément en ligne */
+  padding: 10px 20px; /* Ajoute un espace de 10 pixels en haut et en bas, et 20 pixels à gauche et à droite du bouton */
+  background-color: #b3cde0; /* Définit la couleur de fond du bouton survolé */
+  color: #000000; /* Définit la couleur du texte du bouton survolé */
+  border: 2px solid #ffffff; /* fixe et colore la bordure du bouton */
+  border-radius: 5px; /* Arrondit les coins du bouton */
+  font-weight: bold; /* Met le texte du bouton en gras */
+  cursor: pointer; /* Change le curseur lorsque l'on survole le bouton */
+  margin-top: 10px; /* Ajoute un espace de 10 pixels en haut du bouton */
+}
+
+/* Définition des styles lorsque le curseur survole le bouton "Supprimer" */
+input[type="submit"]:hover {
+  background-color: #ffffff; /* Définit la couleur de fond du bouton survolé */
+  color: #000000; /* Définit la couleur du texte du bouton survolé */
+  border: 2px solid #000000; /* fixe et colore la bordure du bouton */
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 10px; /* Réduire le padding du corps de la page */
+  }
+
+  table, th, td {
+    padding: 10px; /* Réduire le padding dans le tableau, les en-têtes de colonne et les cellules */
+  }
+
+  caption {
+    font-size: 20px; /* Réduire la taille de police de la légende */
+  }
+
+  .absences-button {
+    padding: 5px 10px; /* Réduire le padding du bouton */
+    margin-bottom: 10px; /* Réduire la marge en bas du bouton */
+  }
+
+  input[type="submit"] {
+    padding: 5px 10px; /* Réduire le padding du bouton de soumission */
+    margin-top: 5px; /* Réduire la marge en haut du bouton de soumission */
+  }
+}
+
+/* Media Query pour une largeur d'écran maximale de 992 pixels */
+@media screen and (max-width: 992px) {
+  body {
+    padding: 15px; /* Ajout de padding de 15 pixels pour le corps */
+  }
+
+  table, th, td {
+    padding: 10px; /* Ajout de padding de 10 pixels pour les éléments de tableau */
+  }
+
+  caption {
+    font-size: 18px; /* Modification de la taille de police de la légende à 18 pixels */
+  }
+
+  .absences-button, input[type="submit"] {
+    padding: 5px 10px; /* Ajout de padding de 5 pixels en haut/bas et de 10 pixels à gauche/droite pour les boutons d'absence et les boutons de soumission de formulaire */
+    margin-bottom: 15px; /* Ajout d'une marge inférieure de 15 pixels */
+    margin-top: 5px; /* Ajout d'une marge supérieure de 5 pixels */
+  }
+}
+
+/* Media Query pour une largeur d'écran maximale de 768 pixels */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px; /* Ajout de padding de 10 pixels pour le corps */
+  }
+
+  table, th, td {
+    padding: 8px; /* Ajout de padding de 8 pixels pour les éléments de tableau */
+  }
+
+  caption {
+    font-size: 16px; /* Modification de la taille de police de la légende à 16 pixels */
+  }
+
+  .absences-button, input[type="submit"] {
+    padding: 4px 8px; /* Ajout de padding de 4 pixels en haut/bas et de 8 pixels à gauche/droite pour les boutons d'absence et les boutons de soumission de formulaire */
+    margin-bottom: 10px; /* Ajout d'une marge inférieure de 10 pixels */
+    margin-top: 5px; /* Ajout d'une marge supérieure de 5 pixels */
+  }
+}
+
+/* Media Query pour une largeur d'écran maximale de 600 pixels */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 5px; /* Ajout de padding de 5 pixels pour le corps */
+  }
+
+  table, th, td {
+    padding: 5px; /* Ajout de padding de 5 pixels pour les éléments de tableau */
+  }
+
+  caption {
+    font-size: 14px; /* Modification de la taille de police de la légende à 14 pixels */
+  }
+
+  .absences-button, input[type="submit"] {
+    padding: 3px 6px; /* Ajout de padding de 3 pixels en haut/bas et de 6 pixels à gauche/droite pour les boutons d'absence et les boutons de soumission de formulaire */
+    margin-bottom: 5px; /* Ajout d'une marge inférieure de 5 pixels */
+    margin-top: 3px; /* Ajout d'une marge supérieure de 3 pixels */
+  }
+}
+
+/* Media Query pour une largeur d'écran maximale de 400 pixels */
+@media screen and (max-width: 400px) {
+  body {
+    padding: 2px; /* Ajout de padding de 2 pixels pour le corps */
+  }
+
+  table, th, td {
+    padding: 2px; /* Ajout de padding de 2 pixels pour les éléments de tableau */
+  }
+
+  caption {
+    font-size: 12px; /* Modification de la taille de police de la légende à 12 pixels */
+  }
+
+  .absences-button, input[type="submit"] {
+    padding: 2px 4px; /* Ajout de padding de 2 pixels en haut/bas et de 4 pixels à gauche/droite pour les boutons d'absence et les boutons de soumission de formulaire */
+    margin-bottom: 2px; /* Ajout d'une marge inférieure de 2 pixels */
+    margin-top: 2px; /* Ajout d'une marge supérieure de 2 pixels */
+  }
+}
+
+/*   _  ____     __ ___
+    | |/ /\ \   / /| __ \
+    | ' /  \ \ / / | |_) |
+    | . \   \ V /  |  _ /
+    |_|\_\   \_/   |_| \_\ */

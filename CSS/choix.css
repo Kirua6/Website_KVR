@@ -1,0 +1,286 @@
+/* Importation de la police de caractères Roboto depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* Styles pour le corps de la page */
+body {
+    background: #6c6969; /* Couleur de fond */
+    display: flex; /* Affichage en mode flex */
+    justify-content: center; /* Centrage horizontal des éléments */
+    align-items: center; /* Centrage vertical des éléments */
+    height: 100vh; /* Hauteur égale à 100% de la vue */
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police Roboto */
+}
+
+/* Styles pour les onglets */
+.tab {
+    font-family: "Trebuchet MS", sans-serif; /* Utilisation de la police Trebuchet MS */
+    background:linear-gradient(#f8d305,#DED28A); /* Couleur de fond */
+    color: #000000; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 40px; /* Bordure arrondie */
+    padding: 20px; /* Espacement intérieur */
+    font-size: 20px; /* Taille de la police */
+    text-decoration: none; /* Pas de soulignement du texte */
+     /* Marge extérieure */
+    transition: background 0.3s ease; /* Transition animée pour le changement de couleur de fond */
+    display: flex; /* Affichage en mode flex */
+    justify-content: center; /* Centrage horizontal des éléments */
+    align-items: center; /* Centrage vertical des éléments */
+    width: 250px; /* Largeur de l'onglet */
+    height: 250px; /* Hauteur de l'onglet */
+    text-align: center; /* Alignement horizontal du texte */
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: -50px;
+}
+
+/* Styles au survol des onglets */
+.tab:hover {
+    color: #ded28a; /* Couleur du texte au survol */
+    background: #000000; /* Couleur de fond au survol */
+}
+/* Styles pour le bouton d'ajout d'utilisateur */
+.add-user {
+    margin-bottom: 50px; /* Marge supplémentaire en bas pour séparer du reste des boutons */
+}
+/* Styles pour les écrans avec une largeur maximale de 400px */
+@media screen and (max-width: 400px) {
+    body {
+        flex-direction: column;
+    }
+    .tab {
+        width: 100%; /* Pleine largeur */
+        padding: 10px; /* Espacement intérieur réduit */
+        font-size: 16px; /* Taille de la police réduite */
+        margin-left: 0px; /* Pas de marge horizontale */
+        margin-right: 0px; /* Pas de marge horizontale */
+    }
+}
+
+/* Styles pour les écrans avec une largeur maximale de 600px */
+@media screen and (max-width: 600px) {
+    .tab {
+        width: 100%; /* Pleine largeur */
+        padding: 15px; /* Espacement intérieur réduit */
+        font-size: 18px; /* Taille de la police réduite */
+    }
+}
+
+/* Styles pour les écrans avec une largeur maximale de 768px */
+@media screen and (max-width: 768px) {
+    .tab {
+        width: 100%; /* Pleine largeur */
+        padding: 20px; /* Espacement intérieur original */
+        font-size: 20px; /* Taille de la police originale */
+    }
+}
+
+/* Styles pour les écrans avec une largeur maximale de 992px */
+@media screen and (max-width: 992px) {
+    .tab {
+        width: 50%; /* Demi-largeur */
+    }
+}
+
+/* Styles pour les écrans avec une largeur maximale de 1024px */
+@media screen and (max-width: 1024px) {
+    .tab {
+        width: 50%; /* Demi-largeur */
+    }
+}
+
+/* Partie pokeball d'information */
+  
+/* Centre l'élément au milieu de son conteneur */
+.center {
+  position: absolute; /* Position absolue pour centrer l'élément */
+  top: 50%; /* Définit la position verticale au milieu du conteneur */
+  left: 50%; /* Définit la position horizontale au milieu du conteneur */
+  transform: translate(-50%, -50%); /* Translate pour centrer précisément l'élément */
+}
+
+/* Conteneur fixe en bas à gauche de la page */
+.container {
+  position: fixed; /* Position fixe pour rester en place lors du défilement */
+  bottom: 10px; /* Distance de 10 pixels depuis le bas de la fenêtre */
+  left: 0; /* Collé sur le bord gauche de la fenêtre */
+  height: 200px; /* Hauteur de 200 pixels */
+  width: 200px; /* Largeur de 200 pixels */
+}
+
+/* Classe pour le style d'une pokeball */
+.pokeball {
+  background: #232323; /* Couleur d'arrière-plan */
+  width: 100px; /* Largeur de 100 pixels */
+  height: 100px; /* Hauteur de 100 pixels */
+  border-radius: 100%; /* Forme arrondie en cercle */
+  z-index: 2; /* Ordre d'empilement pour la superposition */
+  position: relative; /* Position relative pour les éléments enfants */
+  cursor: pointer; /* Curseur en forme de pointeur au survol */
+}
+  
+.pokeball::before {
+  content: ""; /* Contenu généré par le pseudo-élément */
+  height: 50%; /* Hauteur de 50% de la pokeball */
+  width: 105%; /* Largeur de 105% pour déborder légèrement */
+  background: #f8d305; /* Couleur d'arrière-plan */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  left: -3px; /* Décalage de -3 pixels vers la gauche */
+  border-radius: 200px 200px 0px 0px; /* Forme arrondie pour le haut de la pokeball */
+}
+
+.pokeball::after {
+  content: ""; /* Contenu généré par le pseudo-élément */
+  height: 50%; /* Hauteur de 50% de la pokeball */
+  width: 105%; /* Largeur de 105% pour déborder légèrement */
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  bottom: -3px; /* Décalage de -3 pixels vers le bas */
+  left: -3px; /* Décalage de -3 pixels vers la gauche */
+  border-radius: 0px 0px 200px 200px; /* Forme arrondie pour le bas de la pokeball */
+  box-shadow: inset -10px 0px 0px rgba(0, 0, 0, 0.2); /* Ombre interne à gauche de la pokeball */
+  animation: shadowShadow 0.5s infinite; /* Animation de l'ombre interne */
+}
+
+.pokeball button {
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  height: 32px; /* Hauteur de 32 pixels */
+  width: 32px; /* Largeur de 32 pixels */
+  border-radius: 100%; /* Forme arrondie en cercle */
+  border: 5px solid #202020; /* Bordure de 5 pixels solide avec une couleur spécifique */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  position: relative; /* Position relative pour se superposer à la pokeball */
+}
+
+.pokeball .pokeball-text {
+  position: absolute; /* Position absolue pour placer le texte */
+  bottom: 10%; /* Distance de 10% depuis le bas de la pokeball */
+  width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
+  text-align: center; /* Alignement du texte au centre */
+  color: #232323; /* Couleur du texte */
+  font-family: 'Open Sans', sans-serif; /* Police de caractères */
+  font-size: 20px; /* Taille de police de 20 pixels */
+  z-index: 3; /* Ordre d'empilement pour la superposition */
+}
+
+.shine {
+  height: 10px; /* Hauteur de 10 pixels */
+  width: 20px; /* Largeur de 20 pixels */
+  border-radius: 200px; /* Forme arrondie en cercle */
+  position: absolute; /* Position absolue pour se superposer à la pokeball */
+  z-index: 2; /* Ordre d'empilement pour la superposition */
+  left: 16px; /* Décalage de 16 pixels vers la gauche */
+  top: 14px; /* Décalage de 14 pixels vers le haut */
+  background: #fff; /* Couleur d'arrière-plan blanche */
+  transform: rotate(-35deg); /* Rotation de l'élément de -35 degrés */
+}
+
+.pokeballShadow {
+  background: #202020; /* Couleur d'arrière-plan */
+  opacity: 0.5; /* Opacité de 0.5 (semi-transparent) */
+  height: 15px; /* Hauteur de 15 pixels */
+  width: 110px; /* Largeur de 110 pixels */
+  top: 220px; /* Décalage de 220 pixels vers le bas */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  border-radius: 100%; /* Forme arrondie en cercle */
+}
+
+.animate {
+  animation: animatePokeball 2s ease-in-out infinite; /* Animation de la pokeball */
+  transform-origin: bottom center; /* Point d'origine de la transformation */
+  transition: all 0.5s ease; /* Transition pour une animation fluide */
+}
+
+.shadowAnimate {
+  animation: shadowMove 2s ease-in-out infinite; /* Animation de déplacement de l'ombre */
+  transition: all 0.5s ease; /* Transition pour une animation fluide */
+}
+
+@keyframes shadowMove {
+  0% {
+    left: 50%; /* Déplacement vers la gauche à 50% */
+  }
+  50% {
+    left: 56%; /* Déplacement vers la gauche à 56% */
+  }
+  100% {
+    left: 50%; /* Retour à la position initiale */
+  }
+}
+
+@keyframes animatePokeball {
+  0% {
+    left: 48%; /* Déplacement vers la gauche à 48% */
+    transform: rotate(-10deg); /* Rotation de -10 degrés */
+  }
+  50% {
+    left: 52%; /* Déplacement vers la gauche à 52% */
+    transform: rotate(10deg); /* Rotation de 10 degrés */
+  }
+  100% {
+    left: 48%; /* Retour à la position initiale */
+    transform: rotate(-10deg); /* Rotation de -10 degrés */
+  }
+}
+
+.bubble {
+  height: 70px; /* Hauteur de 70 pixels */
+  width: 140px; /* Largeur de 140 pixels */
+  background: linear-gradient(#f8d305, #DED28A); /* Dégradé linéaire de couleurs */
+  border-radius: 20px; /* Forme arrondie avec un rayon de 20 pixels */
+  position: absolute; /* Position absolue pour se superposer à l'élément parent */
+  z-index: 1; /* Ordre d'empilement pour la superposition */
+  top: 15px; /* Décalage de 15 pixels vers le haut */
+  left: -15px; /* Décalage de -15 pixels vers la gauche */
+  transition: opacity 1s; /* Transition pour une animation fluide de l'opacité */
+}
+
+.bubble span {
+  color: #000000; /* Couleur du texte */
+  font-family: "Trebuchet MS", sans-serif; /* Police de caractères */
+  position: relative; /* Position relative pour le positionnement du texte */
+  top: 10px; /* Décalage de 10 pixels vers le haut */
+  font-size: 20px; /* Taille de police de 20 pixels */
+  left: 16px; /* Décalage de 16 pixels vers la gauche */
+}
+
+.bubbleArrow {
+  position: relative; /* Position relative pour se superposer à la bulle de dialogue */
+  width: 0; /* Largeur nulle */
+  height: 0; /* Hauteur nulle */
+  border-left: 15px solid transparent; /* Bordure de 15 pixels solide et transparente à gauche */
+  border-right: 15px solid transparent; /* Bordure de 15 pixels solide et transparente à droite */
+  border-top: 20px solid #050505; /* Bordure de 20 pixels solide avec une couleur spécifique en haut */
+  left: 40px; /* Décalage de 40 pixels vers la gauche */
+  top: 60px; /* Décalage de 60 pixels vers le bas */
+}
+
+.bubbleAnimation {
+  top: 300px; /* Décalage de 300 pixels vers le bas */
+  position: absolute; /* Position absolue pour animer le déplacement */
+  opacity: 0; /* Opacité de 0 (invisible) */
+  transition: all 0.5s ease-in-out; /* Transition pour une animation fluide */
+  transform: scale(0); /* Échelle de transformation à 0 (invisible) */
+}
+
+.bubbleAnimation2 {
+  position: absolute; /* Position absolue pour animer le déplacement */
+  top: -120px; /* Décalage de -120 pixels vers le haut */
+  opacity: 1; /* Opacité de 1 (visible) */
+  transition: all 0.5s ease-in-out; /* Transition pour une animation fluide */
+  transform: scale(1); /* Échelle de transformation à 1 (visible) */
+}
+
+.bubbleContainer {
+  position: absolute; /* Position absolue pour placer le conteneur */
+  top: -130px; /* Décalage de -130 pixels vers le haut */
+  left: 130px; /* Décalage de 130 pixels vers la gauche */
+  height: 80px; /* Hauteur de 80 pixels */
+  width: 140px; /* Largeur de 140 pixels */
+}
+
+/*   _  ____     __ ___
+    | |/ /\ \   / /| __ \
+    | ' /  \ \ / / | |_) |
+    | . \   \ V /  |  _ /
+    |_|\_\   \_/   |_| \_\ */

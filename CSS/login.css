@@ -1,0 +1,234 @@
+body {
+    background: url(baggio.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* Ajuste la taille de l'image de fond pour remplir le conteneur */
+    background-size: cover;
+    /* Centre l'image de fond horizontalement et verticalement */
+    background-position: center;
+}
+body::after {
+    content: "";
+    background: url(baggio.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* Ajouter le flou à l'arrière-plan */
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+}
+
+#container {
+    /* Définit la largeur du conteneur */
+    width: 400px;
+    /* Centre le conteneur horizontalement */
+    margin: 0 auto;
+    /* Définit la marge supérieure du conteneur à 10% de la hauteur de l'écran */
+    margin-top: 10%;
+}
+
+form {
+    /* Définit la largeur du formulaire à 100% du conteneur */
+    width: 100%;
+    /* Ajoute un padding de 30px autour du formulaire */
+    padding: 30px;
+    /* Ajoute une bordure de 1px solide de couleur noire */
+    border: 1px solid #000000;
+    /* Définit la couleur de fond du formulaire */
+    background:linear-gradient(#005db4,#69b7ff);
+    /* Ajoute une ombre portée au formulaire */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    /* Ajoute des coins arrondis de rayon 20px au formulaire */
+    border-radius: 20px;
+}
+
+#container h1 {
+    /* Définit la police de caractères pour le titre h1 */
+    font-family: "Trebuchet MS", sans-serif;
+    /* Définit la largeur du titre h1 à 38% du conteneur */
+    width: 38%;
+    /* Centre le titre h1 horizontalement */
+    margin: 0 auto;
+    /* Ajoute un espacement en bas de 10px pour le titre h1 */
+    padding-bottom: 10px;
+    /* Définit la couleur du texte du titre h1 */
+    color: white;
+    }
+
+#container label {
+    /* Définit la police de caractères pour les étiquettes */
+    font-family: "Trebuchet MS", sans-serif;
+    /* Définit la largeur des étiquettes à 38% du conteneur */
+    width: 38%;
+    /* Centre les étiquettes horizontalement */
+    margin: 0 auto;
+    /* Ajoute un espacement en bas de 10px pour les étiquettes */
+    padding-bottom: 10px;
+    /* Définit la couleur du texte des étiquettes */
+    color: white;
+}
+
+input[type=text], input[type=password] {
+    /* Définit la largeur des champs de saisie à 100% */
+    width: 100%;
+    /* Ajoute un padding de 12px en haut et en bas et de 20px à gauche et à droite pour les champs de saisie */
+    padding: 12px 20px;
+    /* Ajoute une marge de 8px en haut et en bas et de 0 à gauche et à droite pour les champs de saisie */
+    margin: 8px 0;
+    /* Affiche les champs de saisie en tant qu'éléments en ligne */
+    display: inline-block;
+    /* Ajoute une bordure de 1px solide de couleur grise autour des champs de saisie */
+    border: 1px solid #ccc;
+    /* Définit la boîte de dimension pour les champs de saisie */
+    box-sizing: border-box;
+    /* Ajoute des coins arrondis de rayon 10px aux champs de saisie */
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    /* Définit la couleur de fond du bouton de soumission */
+    background-color: #202020;
+    /* Définit la couleur du texte du bouton de soumission */
+    color: white;
+    /* Ajoute un padding de 14px en haut et en bas et de 20px à gauche et à droite pour le bouton de soumission */
+    padding: 14px 20px;
+    /* Ajoute une marge de 8px en haut et en bas et de 0 à gauche et à droite pour le bouton de soumission */
+    margin: 8px 0;
+    /* Supprime la bordure autour du bouton de soumission */
+    border: none;
+    /* Définit le curseur de la souris en tant que pointeur pour le bouton de soumission */
+    cursor: pointer;
+    /* Définit la largeur du bouton de soumission à 100% */
+    width: 100%;
+    /* Ajoute des coins arrondis de rayon 10px au bouton de soumission */
+    border-radius: 10px;
+}
+
+input[type=submit]:hover {
+    /* Définit la couleur de fond du bouton de soumission lorsqu'il est survolé */
+    background-color: white;
+    /* Définit la couleur du texte du bouton de soumission lorsqu'il est survolé */
+    color: #000000;
+    /* Ajoute une bordure de 1px solide de couleur noire au bouton de soumission lorsqu'il est survolé */
+    border: 1px solid #000000;
+}
+
+/* Styles pour les écrans ayant une largeur maximale de 400px */
+@media screen and (max-width: 400px) {
+    
+    #container {
+        width: 100%; /* Pleine largeur */
+        margin-top: 25%; /* Moins de marge en haut */
+    }
+    
+    form {
+        padding: 15px; /* Rembourrage réduit */
+    }
+    #container h1, #container label {
+        width: 80%; /* Largeur augmentée */
+    }
+    input[type=text], input[type=password] {
+        padding: 8px 10px; /* Rembourrage réduit */
+    }
+    input[type=submit] {
+        padding: 10px 15px; /* Rembourrage réduit */
+    }
+}
+
+/* Styles pour les écrans ayant une largeur maximale de 600px */
+@media screen and (max-width: 600px) {
+    #container {
+        width: 80%; /* Largeur augmentée */
+        margin-top: 25%; /* Marge en haut augmentée */
+    }
+    form {
+        padding: 20px; /* Rembourrage réduit */
+    }
+    #container h1, #container label {
+        width: 60%; /* Largeur augmentée */
+    }
+    input[type=text], input[type=password] {
+        padding: 10px 15px; /* Rembourrage réduit */
+    }
+    input[type=submit] {
+        padding: 12px 17px; /* Rembourrage réduit */
+    }
+}
+
+/* Styles pour les écrans ayant une largeur maximale de 768px */
+@media screen and (max-width: 768px) {
+    #container {
+        width: 60%; /* Largeur augmentée */
+        margin-top: 25%; /* Marge en haut augmentée */
+    }
+    form {
+        padding: 25px; /* Rembourrage réduit */
+    }
+    #container h1, #container label {
+        width: 50%; /* Largeur augmentée */
+    }
+    input[type=text], input[type=password] {
+        padding: 10px 15px; /* Pas de changements */
+    }
+    input[type=submit] {
+        padding: 12px 17px; /* Pas de changements */
+    }
+}
+
+/* Styles pour les écrans ayant une largeur maximale de 992px */
+@media screen and (max-width: 992px) {
+    #container {
+        width: 50%; /* Largeur augmentée */
+        margin-top: 25%; /* Marge en haut augmentée */
+    }
+    form {
+        padding: 30px; /* Rembourrage original */
+    }
+    #container h1, #container label {
+        width: 40%; /* Largeur augmentée */
+    }
+    input[type=text], input[type=password] {
+        padding: 12px 20px; /* Rembourrage original */
+    }
+    input[type=submit] {
+        padding: 14px 20px; /* Rembourrage original */
+    }
+}
+
+/* Styles pour les écrans ayant une largeur maximale de 1024px */
+@media screen and (max-width:1024px) {
+    #container {
+        width: 40%; /* Largeur augmentée */
+        margin-top: 30%; /* Marge en haut d'origine */
+    }
+    form {
+        padding: 30px; /* Rembourrage d'origine */
+    }
+    #container h1, #container label {
+        width: 38%; /* Largeur d'origine */
+    }
+    input[type=text], input[type=password] {
+        padding: 12px 20px; /* Rembourrage d'origine */
+    }
+    input[type=submit] {
+        padding: 14px 20px; /* Rembourrage d'origine */
+    }
+}
+
+/*   _  ____     __ ___
+    | |/ /\ \   / /| __ \
+    | ' /  \ \ / / | |_) |
+    | . \   \ V /  |  _ /
+    |_|\_\   \_/   |_| \_\ */

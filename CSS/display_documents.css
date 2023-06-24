@@ -1,0 +1,57 @@
+body {
+    /* Spécifie la police du texte */
+    font-family: Arial, sans-serif;
+    /* Supprime les marges par défaut autour du corps */
+    margin: 0;
+    /* Supprime le padding par défaut autour du corps */
+    padding: 0;
+    /* Le contenu du corps est centré avec la méthode flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Le corps occupe toute la hauteur de la vue */
+    height: 100vh;
+    /* Couleur d'arrière-plan du corps du document */
+    background-color: #F2E7C9;
+}
+
+/* Le style du conteneur d'image */
+#image-container {
+    /* L'image ne dépasse pas la largeur et la hauteur du conteneur */
+    max-width: 100%;
+    max-height: 100%;
+    /* Ajoute une ombre autour du conteneur d'image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Le style du lien de retour */
+#retour-link {
+    /* Positionne le lien de retour dans le coin supérieur gauche de la page */
+    position: absolute;
+    top: 10px; /* Distance depuis le haut de la page */
+    left: 10px; /* Distance depuis le côté gauche de la page */
+    /* Ajoute un peu d'espace autour du lien de retour */
+    padding: 10px;
+    /* Couleur d'arrière-plan du lien de retour */
+    background-color: #586e75;
+    /* Couleur du texte du lien de retour */
+    color: #ffffff;
+    /* Supprime le soulignement du lien de retour */
+    text-decoration: none;
+    /* Arrondit les coins du lien de retour */
+    border-radius: 5px;
+}
+
+/* Le style du lien de retour lorsqu'il est survolé */
+#retour-link:hover {
+    /* Change la couleur d'arrière-plan lorsqu'il est survolé */
+    background-color: #839496;
+    /* Maintient la couleur du texte lorsque survolé */
+    color: #ffffff;
+}
+
+/*   _  ____     __ ___
+    | |/ /\ \   / /| __ \
+    | ' /  \ \ / / | |_) |
+    | . \   \ V /  |  _ /
+    |_|\_\   \_/   |_| \_\ */
