@@ -47,7 +47,7 @@
     // Si la différence en jours est inférieure ou égale à 5
     if ($days_difference <= 5) {
         // Faire une requête à l'API météo pour obtenir les données météo pour la localisation et les jours spécifiés
-        $weather_data = file_get_contents("https://api.weatherapi.com/v1/forecast.json?key=d41858b7c9184cd5b28160432231006&q=$location&days=5&lang=fr");
+        $weather_data = file_get_contents("https://api.weatherapi.com/v1/forecast.json?key=VOTRE_CLE-D'API&q=$location&days=5&lang=fr");
                                                                           //mettez votre clé d'api, sans "" ou autre entre ?key= et &q=$location&days
         // Décode les données JSON retournées par l'API météo
         $weather_data = json_decode($weather_data, true);
