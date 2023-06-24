@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+/* STYLE MENU DESKTOP*/
+.navbar-desktop{
+    height: 100px;
+    line-height: 8rem;/*centre verticalement*/
+    text-align: center;/*centre horizontalement*/
+    background-color: transparent;
+}
+/* style des liens*/
+.navbar-desktop a{
+    color: #000000;
+    font-size: 20px;
+    /* Définit la police de caractères */
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 3rem;
+}
+/* STYLE MENU MOBILE*/
+.navbar-mobile{
+    display: none;
+}
+.navbar-mobile i{
+    position: fixed;
+    z-index: 9999;
+    top: 9px;
+    right: 15px;
+    font-size: 3rem;
+    color: #000000;
+}
+
+.modal{
+    transition: top 0.9s;
+    background: linear-gradient(#69b7ff, #005db4);
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.navbar-mobile .navbar-mobile-list{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #000000;
+    padding: 2rem;
+}
+
+.change-modal{
+    top:0
+}
+
+.encadrer-un-contenu{ border: 1px solid rgb(204, 190, 190); padding: 5px; }
+
+@media screen and (max-width : 1000px){
+    .navbar-desktop{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+    }
+    
+}
+.cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* obligé de mettre une width si position fixed */
+    background-color: grey;
+    display: flex;
+    justify-content: space-between; /* positionner les DIV enfants */
+    align-items: center; /* centrer verticalement */
+    padding: 2rem;
+    opacity: 1; /* modif de la valeur en js */
+    transition: 0.5s;
+}
+
+.cookies-btn{
+    display: flex;
+}
+
+.btn.btn-success{
+    background-color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn.btn-deny{
+    background-color: #5a5b5f;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* _  ____     __ ___
+  | |/ /\ \   / /| __ \
+  | ' /  \ \ / / | |_) |
+  | . \   \ V /  |  _ /
+  |_|\_\   \_/   |_| \_\ */  
