@@ -7,9 +7,9 @@ Le site gère diverses fonctionnalités comme la connexion et déconnexion des u
 
 Connexion à la base de donnée si non spécifié dans la page : db.php 
 
-Première page - page de connexion : login.php - login.css - verification.php - principale.php - intro.png
+Première page - page de connexion : login.php - login.css - verification.php - principale.php - baggio.jpg
 
-Deuxième page - page de choix : choix.php 
+Deuxième page - page de choix : choix.php - login.css - verification.php - principale.php - baggio.jpg
 
 Page redirigé depuis choix.php : 
 
