@@ -7,29 +7,29 @@ Le site gère diverses fonctionnalités comme la connexion et déconnexion des u
 
 Connexion à la base de donnée si non spécifié dans la page : db.php 
 
-Première page - page de connexion : login.php - login.css - verification.php - principale.php - baggio.jpg
+Première page - page de connexion : login.php - login.css - verification.php - principale.php - baggio.jpg - general.css - general.js
 
-Deuxième page - page de choix : choix.php - login.css - verification.php - principale.php - baggio.jpg
+Deuxième page - page de choix : choix.php - login.css - verification.php - principale.php - baggio.jpg - general.css - general.js
 
 Page redirigé depuis choix.php : 
 
-Rentrer absence des professeurs : absences.php - absences.css 
+Rentrer absence des professeurs : absences.php - absences.css - general.css - general.js
 
---> Afficher et supprimer les absences des professeurs : validation_absences.php - validation_absences.css - delete_absences.php 
+--> Afficher et supprimer les absences des professeurs : validation_absences.php - validation_absences.css - delete_absences.php
 
-Rentrer menu de la cantine : menu_form.php - menu_form.css - menu_submit.php 
+Rentrer menu de la cantine : menu_form.php - menu_form.css - menu_submit.php - general.css - general.js
 
 --> Afficher menu de la cantine : lundi.php - mardi.php - mercredi.php - jeudi.php - vendredi.php - jour.css  
 
-Rentrer météo : entrer_meteo.php - entrer_meteo.css - envoyer_meteo.php - jQuery.js
+Rentrer météo : entrer_meteo.php - entrer_meteo.css - envoyer_meteo.php - jQuery.js - general.css - general.js
 
 --> Afficher météo : meteo.php - meteo.css - nuage.jpg 
 
-Rentrer images maison des collégiens : documents.php - documents.css - scripts.js - upload.php - file_list.php - delete.php
+Rentrer images maison des collégiens : documents.php - documents.css - scripts.js - upload.php - file_list.php - delete.php - general.css - general.js
 
 --> Afficher images : display.php - display_documents.css  
 
-Ajouter, supprimer utilisateurs et modifier mot de passe : add_user.php - add_user.css - redirection.js - delete_user.php
+Ajouter, supprimer utilisateurs et modifier mot de passe : add_user.php - add_user.css - redirection.js - delete_user.php - general.css - general.js
 
 Deconnexion, suppression de la session en cours : logout.php
 
