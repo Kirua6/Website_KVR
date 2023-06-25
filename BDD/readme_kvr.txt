@@ -9,7 +9,7 @@ Connexion à la base de donnée si non spécifié dans la page : db.php
 
 Première page - page de connexion : login.php - login.css - verification.php - principale.php - intro.png
 
-Deuxième page - page de choix : choix.php - choix.css - redirection.js
+Deuxième page - page de choix : choix.php 
 
 Page redirigé depuis choix.php : 
 
